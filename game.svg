@@ -1,0 +1,116 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="'JetBrains Mono','Courier New',monospace">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1f14"/>
+      <stop offset="1" stop-color="#05070a"/>
+    </linearGradient>
+    <g id="mtn">
+      <polygon points="-20,210 130,96 280,210" fill="#0c2417"/>
+      <polygon points="230,210 430,70 630,210" fill="#0a1d13"/>
+      <polygon points="560,210 720,110 900,210" fill="#0c2417"/>
+    </g>
+    <g id="hill">
+      <path d="M-40,212 Q140,150 320,212 Z" fill="#123a22"/>
+      <path d="M260,212 Q470,140 700,212 Z" fill="#16462a"/>
+      <path d="M620,212 Q800,155 980,212 Z" fill="#123a22"/>
+    </g>
+    <g id="brick" stroke="#05070a" stroke-width="2">
+      <g>
+        <line x1="0" y1="212" x2="0" y2="260"/><line x1="45" y1="212" x2="45" y2="260"/>
+        <line x1="90" y1="212" x2="90" y2="260"/><line x1="135" y1="212" x2="135" y2="260"/>
+        <line x1="180" y1="212" x2="180" y2="260"/><line x1="225" y1="212" x2="225" y2="260"/>
+        <line x1="270" y1="212" x2="270" y2="260"/><line x1="315" y1="212" x2="315" y2="260"/>
+        <line x1="360" y1="212" x2="360" y2="260"/><line x1="405" y1="212" x2="405" y2="260"/>
+        <line x1="450" y1="212" x2="450" y2="260"/><line x1="495" y1="212" x2="495" y2="260"/>
+        <line x1="540" y1="212" x2="540" y2="260"/><line x1="585" y1="212" x2="585" y2="260"/>
+        <line x1="630" y1="212" x2="630" y2="260"/><line x1="675" y1="212" x2="675" y2="260"/>
+        <line x1="720" y1="212" x2="720" y2="260"/><line x1="765" y1="212" x2="765" y2="260"/>
+        <line x1="810" y1="212" x2="810" y2="260"/><line x1="855" y1="212" x2="855" y2="260"/>
+      </g>
+      <line x1="0" y1="236" x2="900" y2="236" stroke="#05070a" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="260" fill="url(#sky)"/>
+
+  <!-- moon -->
+  <circle cx="790" cy="56" r="30" fill="#39ff14" opacity="0.12">
+    <animate attributeName="opacity" values="0.08;0.2;0.08" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="790" cy="56" r="16" fill="#22c55e" opacity="0.3"/>
+
+  <g fill="#15311f" opacity="0.85">
+    <g><animateTransform attributeName="transform" type="translate" values="900 0;-200 0" dur="28s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="60" rx="34" ry="12"/><ellipse cx="26" cy="54" rx="22" ry="12"/></g>
+    <g><animateTransform attributeName="transform" type="translate" values="900 0;-200 0" dur="36s" begin="-14s" repeatCount="indefinite"/>
+      <ellipse cx="300" cy="90" rx="30" ry="10"/><ellipse cx="324" cy="85" rx="20" ry="10"/></g>
+  </g>
+
+  <g><animateTransform attributeName="transform" type="translate" values="0 0;-900 0" dur="22s" repeatCount="indefinite"/>
+    <use xlink:href="#mtn" x="0"/><use xlink:href="#mtn" x="900"/></g>
+  <g><animateTransform attributeName="transform" type="translate" values="0 0;-900 0" dur="12s" repeatCount="indefinite"/>
+    <use xlink:href="#hill" x="0"/><use xlink:href="#hill" x="900"/></g>
+
+  <rect x="0" y="210" width="900" height="50" fill="#111827"/>
+  <rect x="0" y="206" width="900" height="5" fill="#39ff14"/>
+  <g><animateTransform attributeName="transform" type="translate" values="0 0;-900 0" dur="5s" repeatCount="indefinite"/>
+    <use xlink:href="#brick" x="0"/><use xlink:href="#brick" x="900"/></g>
+
+  <!-- coins (orange) -->
+  <g><animateTransform attributeName="transform" type="translate" values="0 0;-900 0" dur="5s" repeatCount="indefinite"/>
+    <g transform="translate(360,150)"><g><ellipse rx="9" ry="12" fill="#ff8a1e" stroke="#ffae42" stroke-width="2"/><animateTransform attributeName="transform" type="scale" values="1 1;0.12 1;1 1" dur="1.4s" repeatCount="indefinite"/></g></g>
+    <g transform="translate(560,150)"><g><ellipse rx="9" ry="12" fill="#ff8a1e" stroke="#ffae42" stroke-width="2"/><animateTransform attributeName="transform" type="scale" values="1 1;0.12 1;1 1" dur="1.4s" begin="-0.5s" repeatCount="indefinite"/></g></g>
+    <g transform="translate(760,150)"><g><ellipse rx="9" ry="12" fill="#ff8a1e" stroke="#ffae42" stroke-width="2"/><animateTransform attributeName="transform" type="scale" values="1 1;0.12 1;1 1" dur="1.4s" begin="-0.9s" repeatCount="indefinite"/></g></g>
+    <g transform="translate(1180,150)"><g><ellipse rx="9" ry="12" fill="#ff8a1e" stroke="#ffae42" stroke-width="2"/><animateTransform attributeName="transform" type="scale" values="1 1;0.12 1;1 1" dur="1.4s" begin="-0.3s" repeatCount="indefinite"/></g></g>
+  </g>
+
+  <!-- purple platforms -->
+  <g><animateTransform attributeName="transform" type="translate" values="0 0;-900 0" dur="5s" repeatCount="indefinite"/>
+    <g transform="translate(470,150)"><rect x="-34" y="0" width="68" height="16" rx="3" fill="#120a1a" stroke="#a855f7" stroke-width="2"/></g>
+    <g transform="translate(1000,150)"><rect x="-34" y="0" width="68" height="16" rx="3" fill="#120a1a" stroke="#a855f7" stroke-width="2"/></g>
+  </g>
+
+  <!-- HERO (green neon) -->
+  <g transform="translate(175,0)">
+    <circle cx="0" cy="204" r="3" fill="#39ff14" opacity="0">
+      <animate attributeName="r" values="2;12;2" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" keyTimes="0;0.08;0.3" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -40;0 0" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.2 0.7 0.5 1;0.5 0 0.8 0.3" dur="1s" repeatCount="indefinite"/>
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="1 1;1.08 0.9;1 1;0.9 1.1;1 1" keyTimes="0;0.12;0.5;0.9;1" dur="1s" repeatCount="indefinite" additive="sum"/>
+        <rect x="-10" y="186" width="7" height="8" rx="2" fill="#15803d"/>
+        <rect x="3" y="186" width="7" height="8" rx="2" fill="#15803d"/>
+        <rect x="-15" y="160" width="30" height="30" rx="7" fill="#111827" stroke="#39ff14" stroke-width="2"/>
+        <rect x="-11" y="166" width="22" height="9" rx="4" fill="#05070a"/>
+        <circle cx="-4" cy="170.5" r="2" fill="#39ff14"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
+        <circle cx="5" cy="170.5" r="2" fill="#39ff14"><animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="-0.2s" repeatCount="indefinite"/></circle>
+        <line x1="0" y1="160" x2="0" y2="152" stroke="#a855f7" stroke-width="2"/>
+        <circle cx="0" cy="150" r="2.5" fill="#a855f7"><animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite"/></circle>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(205,160)" fill="#ff8a1e" font-size="11">
+    <text>+100
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -22" keyTimes="0;1" dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.6;1" dur="1.4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <text x="26" y="34" fill="#4ade80" font-size="13" letter-spacing="2">LEVEL 1-1</text>
+  <text x="26" y="54" fill="#6b7280" font-size="10" letter-spacing="1">@nicodevgames</text>
+
+  <g transform="translate(792,30)">
+    <path d="M0,4 a4,4 0 0 1 8,0 q0,5 -4,8 q-4,-3 -4,-8 z" fill="#a855f7"/>
+    <path d="M16,4 a4,4 0 0 1 8,0 q0,5 -4,8 q-4,-3 -4,-8 z" fill="#a855f7"/>
+    <path d="M32,4 a4,4 0 0 1 8,0 q0,5 -4,8 q-4,-3 -4,-8 z" fill="#39ff14">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g transform="translate(792,50)">
+    <ellipse cx="4" cy="6" rx="5" ry="7" fill="#ff8a1e" stroke="#ffae42" stroke-width="1.5"/>
+    <text x="16" y="11" fill="#ff8a1e" font-size="12" letter-spacing="1">x 08</text>
+  </g>
+</svg>
